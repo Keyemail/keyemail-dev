@@ -70,12 +70,12 @@
   height: fit-content;
 }
 
-.header h1{
+.headContents h1{
   font-weight: 500;
   font-size: 50px
 }
 
-.header p {
+.headContents p {
   margin-top: 40px;
   font-weight: 400;
   font-size: 30px;
@@ -85,7 +85,6 @@
 .header img {
   width: 400px;
   height: 400px;
-  align-self: flex-end;
   justify-self: center;
 }
 
@@ -97,5 +96,40 @@
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
   font-size: 30px;
+}
+@media only screen and (max-width: 1376px){
+  .workinprogress{
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1360px) {
+  .header {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .headContents{
+    text-align: center;
+  }
+
+  .header img{
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 990px){
+  .headContents p {
+    width: auto;
+  }
+  .workinprogress {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .workinprogress {
+    font-size: 10px;
+  }
 }
 </style>
