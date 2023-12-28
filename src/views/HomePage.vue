@@ -1,12 +1,4 @@
 <template>
-  <div class="navbar">
-    <h1>Keyemail</h1>
-    <ul class="navContents">
-      <li><a>Home</a></li>
-      <li><a>Gallery</a></li>
-      <li><a>Socials</a></li>
-    </ul>
-  </div>
   <div class="header">
     <div class="headContents">
       <h1>Hello, I'm Keyemail or Patrick.</h1>
@@ -23,39 +15,6 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
-
-.navbar{
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 500;
-}
-
-.navbar h1{
-  width: fit-content;
-}
-
-.navContents {
-  list-style: none;
-  float: right;
-}
-
-.navContents li{
-  display: inline;
-  cursor: pointer;
-  margin-left: 10px;
-  font-weight: 400;
-  transition: color 0.3s;
-}
-
-.navContents li:hover{
-  color: #8ee8fc;
-}
-
 .header {
   position: relative;
   color: white;
