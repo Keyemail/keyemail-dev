@@ -1,24 +1,6 @@
-# keyemail-dev
+# keyemail-dev by Keyemail
 
-## Project setup
-```
-yarn install
-```
+keyemail-dev is a project site to display about the user Keyemail. This was made possible by an entire Vue v3.0 Website.
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[!NOTE]
+This project was more for fun.
