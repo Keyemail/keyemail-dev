@@ -4,9 +4,9 @@ keyemail-dev is a project site to display about the user Keyemail using Vue v3.0
 
 ## To Build:
 Use this command to build:
-```yarn build```
+`yarn build`
 
 and use the folder `dist` for production.
 
->[!NOTE]
->This project was more for fun.
+## Contact:
+Contact `Keyemail` if you have any questions or concerns.
