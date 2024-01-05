@@ -94,6 +94,7 @@
   border: 4px;
   border-style: solid;
 }
+
 .socialsgrid i {
   font-size: 35px;
   margin-top: auto;
