@@ -18,6 +18,7 @@
   color: white;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
+  margin-top: 20px;
 }
 
 .navbar h1{

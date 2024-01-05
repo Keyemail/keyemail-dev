@@ -10,11 +10,11 @@
     <img alt="Profile Picture" src="../assets/roller_profile_circle.png">
   </div>
   <div class="workinprogress">
-    <h1>-- More is to come soon! Work in progress. --</h1>
+    <h1>-- Alpha site. Change is possible. --</h1>
   </div>
 </template>
 
-<style>
+<style scoped>
 .header {
   position: relative;
   color: white;
@@ -56,6 +56,7 @@
   font-weight: 500;
   font-size: 30px;
 }
+
 @media only screen and (max-width: 1376px){
   .workinprogress{
     font-size: 20px;
