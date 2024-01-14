@@ -104,4 +104,11 @@
     margin-top: 100px;
   }
 }
+
+@media only screen and (max-width: 380px) {
+  .header img {
+    width: 100%;
+    height: auto;
+  }
+}
 </style>
