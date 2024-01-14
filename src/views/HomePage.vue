@@ -3,14 +3,11 @@
     <div class="headContents">
       <h1>Hello, I'm Keyemail or Patrick.</h1>
       <p>
-        I specalize more onto IT and Web Development related stuff, but I also love doing a variety of diffrent hobbies such as Flight Simulator, or learning Japanese.
-        I daily run a Arch Linux machine as my main system and support Linux in every way. Im glad to meet you!
+        I specialize in IT and web development-related stuff, but I also love doing a variety of different hobbies such as Flight Simulator, or learning Japanese.
+        I daily run an Arch Linux machine as my main system and support Linux in every way. I'm glad to meet you!
       </p>
     </div>
     <img alt="Profile Picture" src="../assets/roller_profile_circle.png">
-  </div>
-  <div class="workinprogress">
-    <h1>-- Alpha site. Change is possible. --</h1>
   </div>
 </template>
 
@@ -18,7 +15,7 @@
 .header {
   position: relative;
   color: white;
-  margin-top: 150px;
+  height: 100%;
   font-family: 'Rubik', sans-serif;
   display: flex;
   justify-content: space-between;
@@ -67,6 +64,7 @@
   .header {
     justify-content: center;
     flex-direction: column;
+    margin-top: 80px;
   }
 
   .headContents{
@@ -75,6 +73,9 @@
 
   .header img{
     margin-top: 60px;
+    width: 350px;
+    height: 350px;
+    padding-bottom: 60px;
   }
 }
 
@@ -90,6 +91,13 @@
 @media only screen and (max-width: 720px) {
   .workinprogress {
     font-size: 10px;
+  }
+}
+
+@media only screen and (max-height: 720px) {
+  .header {
+    height: auto;
+    margin-top: 100px;
   }
 }
 </style>
