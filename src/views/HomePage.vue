@@ -92,6 +92,10 @@
   .workinprogress {
     font-size: 10px;
   }
+  .header {
+    height: auto;
+    margin-top: 100px;
+  }
 }
 
 @media only screen and (max-height: 720px) {
