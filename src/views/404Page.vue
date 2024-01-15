@@ -33,6 +33,6 @@
 }
 
 .notFound a:hover {
-  color: #74d2f1
+  color: #74d2f1;
 }
 </style>

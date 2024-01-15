@@ -18,6 +18,7 @@ export default {
 
 html, body, #app {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 #app {
@@ -25,7 +26,7 @@ html, body, #app {
   flex-direction: column;
   max-width: 1920px;
   margin: auto;
-  margin: 0px 20px;
+  padding: 0px 20px;
 }
 
 * { 
