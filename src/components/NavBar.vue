@@ -1,14 +1,14 @@
 <template>
   <div class="navbar">
     <h1>Keyemail</h1>
-    <ul class="navContents">
+    <ul class="navContents" v-if="!(isMobile() || smallScreen)">
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/gallery">Gallery</router-link></li>
       <li><router-link to="/socials">Socials</router-link></li>
     </ul>
-    <div class="mobileNavButton">
-      <i class="fa-solid fa-x" @click="mobileUI()" v-if="turnOnMobileUI"></i>
-      <i class="fas fa-bars" @click="mobileUI()" v-else></i>
+    <div class="mobileNavButton" v-else>
+      <i class="fa-solid fa-x" @click="mobileUI(); handleResize();" v-if="turnOnMobileUI"></i>
+      <i class="fas fa-bars" @click="mobileUI();" v-else></i>
     </div>
   </div>
   <div class="mobileNav" v-if="turnOnMobileUI">
@@ -26,8 +26,13 @@
 export default {
   data(){
     return {
-      turnOnMobileUI: false
+      turnOnMobileUI: false,
+      smallScreen: false
     }
+  },
+  mounted() {
+    window.addEventListener('resize', this.handleResize);
+    this.handleResize();
   },
   methods: {
     mobileUI() {
@@ -39,6 +44,18 @@ export default {
       } else {
         this.turnOnMobileUI = false;
         document.body.style.overflow = 'auto';
+      }
+    },
+    isMobile(){
+       return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    },
+    handleResize() {
+      if(window.innerWidth < 450) {
+        this.smallScreen = true;
+      } else if(this.turnOnMobileUI === true) {
+        return;
+      } else {
+        this.smallScreen = false;
       }
     }
   }
@@ -85,7 +102,6 @@ export default {
 }
 
 .mobileNavButton {
-  display: none;
   z-index: 10;
 }
 
@@ -143,14 +159,5 @@ export default {
 
 .mobileNavContents a:hover {
   color: #74d2f1;
-}
-
-@media only screen and (max-width: 415px) {
-  .navContents {
-    display: none;
-  }
-  .mobileNavButton {
-    display: block;
-  }
 }
 </style>
