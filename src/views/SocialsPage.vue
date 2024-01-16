@@ -148,4 +148,12 @@
     margin-left: 0px;
   }
 }
+
+@media only screen and (max-height: 720px){
+  .socials {
+    display: flex;
+    justify-content: unset;
+    margin-top: 80px;
+  }
+}
 </style>
