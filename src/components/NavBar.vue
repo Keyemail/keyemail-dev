@@ -5,6 +5,7 @@
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/gallery">Gallery</router-link></li>
       <li><router-link to="/socials">Socials</router-link></li>
+      <li><router-link to="/projects">Projects</router-link></li>
     </ul>
     <div class="mobileNavButton" v-else>
       <i class="fa-solid fa-x" @click="mobileUI(); handleResize();" v-if="turnOnMobileUI"></i>
@@ -17,6 +18,7 @@
         <li><router-link to="/" @click="mobileUI()">Home</router-link></li>
         <li><router-link to="/gallery" @click="mobileUI()">Gallery</router-link></li>
         <li><router-link to="/socials" @click="mobileUI()">Socials</router-link></li>
+        <li><router-link to="/projects" @click="mobileUI()">Projects</router-link></li>
       </ul>
     </div>
   </div>

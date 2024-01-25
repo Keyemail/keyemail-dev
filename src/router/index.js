@@ -4,6 +4,7 @@ import homeView from '../views/HomePage.vue'
 import galleryView from '../views/GalleryPage.vue'
 import socialView from '../views/SocialsPage.vue'
 import notFoundPage from '../views/404Page.vue'
+import projectsView from '../views/ProjectsPage.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
   {
     path: '/:pathMatch(.*)',
     component: notFoundPage
+  },
+  {
+    path: '/projects',
+    name: 'Projects',
+    component: projectsView
   }
 ]
 

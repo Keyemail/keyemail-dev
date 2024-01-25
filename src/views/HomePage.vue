@@ -7,7 +7,9 @@
         I daily run an Arch Linux machine as my main system and support Linux in every way. I'm glad to meet you!
       </p>
     </div>
-    <img alt="Profile Picture" src="../assets/roller_profile_circle.png">
+    <a href="https://www.pixiv.net/en/artworks/115330417" target="_blank">
+      <img alt="Profile Picture" src="../assets/profile_circle.png"/>
+    </a>
   </div>
 </template>
 
