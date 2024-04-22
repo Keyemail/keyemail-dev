@@ -1,7 +1,7 @@
 <template>
   <header>
     <a class="pfp" href="https://www.pixiv.net/en/artworks/118037520">
-      <img src="@/assets/profile.png"/> 
+      <img src="@/assets/profile.jpg"/> 
     </a> 
     <h1>Keyemail</h1>
   </header>
@@ -16,7 +16,7 @@ header {
   display: flex;
   align-items: center;
   margin-top: 20px;
-  background-image: url(@/assets/banner_website.png);
+  background-image: url(@/assets/banner_website.avif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 20%;
@@ -56,7 +56,7 @@ header h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 90px;
+  margin: 90px 0;
   width: 100%;
   color: white;
   font-family: 'Rubik', sans-serif;
@@ -82,11 +82,17 @@ header h1 {
     height: 240px;
     justify-content: center;
   }
+  header h1 {
+    margin-left: 0px;
+  }
   .intro h1 {
     font-size: 3rem;
   }
   .intro p {
     font-size: 1.8rem;
   }
+  .pfp{
+    margin-left: 0px;
+  } 
 }
 </style>
