@@ -1,116 +1,92 @@
 <template>
-  <div class="header">
-    <div class="headContents">
-      <h1>Hello, I'm Keyemail or Patrick.</h1>
-      <p>
-        I specialize in IT and web development-related stuff, but I also love doing a variety of different hobbies such as Flight Simulator, or learning Japanese.
-        I daily run an Arch Linux machine as my main system and support Linux in every way. I'm glad to meet you!
-      </p>
-    </div>
-    <a href="https://www.pixiv.net/en/artworks/115330417" target="_blank">
-      <img alt="Profile Picture" src="../assets/profile_circle.png"/>
-    </a>
+  <header>
+    <a class="pfp" href="https://www.pixiv.net/en/artworks/118037520">
+      <img src="@/assets/profile.png"/> 
+    </a> 
+    <h1>Keyemail</h1>
+  </header>
+  <div class="intro">
+    <h1>Hi, I'm Keyemail or Patrick.</h1>
+    <p>I specialize in IT and web development-related stuff, but I also love doing a variety of different hobbies such as Flight Simulator, or learning Japanese. I daily run an Arch Linux machine as my main system and support Linux in every way. I'm glad to meet you! </p>
   </div>
 </template>
 
 <style scoped>
-.header {
-  position: relative;
-  color: white;
-  height: 100%;
-  font-family: 'Rubik', sans-serif;
+header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
+  background-image: url(@/assets/banner_website.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 20%;
+  height: 180px;
+  width: 100%;
+  background-color: black;
+  border-radius: 10px;
+  font-family: 'Rubik', sans-serif;  
 }
 
-.headContents {
-  height: fit-content;
+header h1 {
+  color: white;
+  margin-left: 20px;
+  font-size: 3rem; 
+  -webkit-text-stroke: 1px black;
 }
 
-.headContents h1{
-  font-weight: 500;
-  font-size: 50px
+.pfp {
+  height: 130px !important;
+  width: 130px !important;
+  border: solid;
+  border-width: 4px;
+  border-radius: 50%;
+  border-color: white;
+  overflow: hidden;
+  margin-left: 20px;
 }
 
-.headContents p {
-  margin-top: 40px;
-  font-weight: 400;
-  font-size: 30px;
-  width: 900px;
+.pfp img {
+  width:100%;
+  height:100%;
+  object-fit: cover;
 }
 
-.header img {
-  width: 400px;
-  height: 400px;
-  justify-self: center;
-}
-
-.workinprogress {
+.intro {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 200px;
+  align-items: center;
+  margin-top: 90px;
+  width: 100%;
   color: white;
   font-family: 'Rubik', sans-serif;
+}
+
+.intro h1 {
+  font-size: 4rem;
   font-weight: 500;
-  font-size: 30px;
+  text-align: center;
 }
 
-@media only screen and (max-width: 1376px){
-  .workinprogress{
-    font-size: 20px;
-  }
+.intro p {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  max-width: 1200px;
 }
 
-@media only screen and (max-width: 1360px) {
-  .header {
-    justify-content: center;
+@media screen and (max-width: 450px){
+  header {
     flex-direction: column;
-    margin-top: 80px;
+    height: 240px;
+    justify-content: center;
   }
-
-  .headContents{
-    text-align: center;
+  .intro h1 {
+    font-size: 3rem;
   }
-
-  .header img{
-    margin-top: 60px;
-    width: 350px;
-    height: 350px;
-    padding-bottom: 60px;
-  }
-}
-
-@media only screen and (max-width: 990px){
-  .headContents p {
-    width: auto;
-  }
-  .workinprogress {
-    font-size: 15px;
-  }
-}
-
-@media only screen and (max-width: 720px) {
-  .workinprogress {
-    font-size: 10px;
-  }
-  .header {
-    height: auto;
-    margin-top: 100px;
-  }
-}
-
-@media only screen and (max-height: 720px) {
-  .header {
-    height: auto;
-    margin-top: 100px;
-  }
-}
-
-@media only screen and (max-width: 380px) {
-  .header img {
-    width: 100%;
-    height: auto;
+  .intro p {
+    font-size: 1.8rem;
   }
 }
 </style>

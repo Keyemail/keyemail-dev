@@ -17,8 +17,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
 
 html, body, #app {
-  height: 100%;
   scroll-behavior: smooth;
+  background-color: #192236;
 }
 
 #app {
@@ -32,9 +32,5 @@ html, body, #app {
 * { 
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: #192236;
 }
 </style>
