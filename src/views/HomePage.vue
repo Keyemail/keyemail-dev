@@ -22,7 +22,7 @@ header {
   background-position: center 20%;
   height: 180px;
   width: 100%;
-  background-color: black;
+  background-color: #0df;
   border-radius: 10px;
   font-family: 'Rubik', sans-serif;  
 }
@@ -49,6 +49,7 @@ header h1 {
   width:100%;
   height:100%;
   object-fit: cover;
+  background-color: #afb5c8
 }
 
 .intro {
