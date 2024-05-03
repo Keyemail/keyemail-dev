@@ -5,9 +5,14 @@
     </a> 
     <h1>Keyemail</h1>
   </header>
-  <div class="intro">
-    <h1>Hi, I'm Keyemail or Patrick.</h1>
-    <p>I specialize in IT and web development-related stuff, but I also love doing a variety of different hobbies such as Flight Simulator, or learning Japanese. I daily run an Arch Linux machine as my main system and support Linux in every way. I'm glad to meet you! </p>
+  <div class="section-row">
+    <div class="intro">
+      <h1>Hi, I'm Keyemail or Patrick.</h1>
+      <p>I specialize in IT and web development-related stuff, but I also love doing a variety of different hobbies such as Flight Simulator, or learning Japanese. I daily run an Arch Linux machine as my main system and support Linux in every way. I'm glad to meet you! </p>
+    </div>
+    <article>
+      <h1>Comments!</h1> 
+    </article>
   </div>
 </template>
 
@@ -52,29 +57,48 @@ header h1 {
   background-color: #afb5c8
 }
 
+.section-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin: 90px 0;
-  width: 100%;
+  width: 750px;
   color: white;
   font-family: 'Rubik', sans-serif;
 }
 
 .intro h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
 }
 
 .intro p {
   margin-top: 15px;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   max-width: 1200px;
+}
+
+article {
+ background-color: #101a30;
+ height: 250px;
+ width: 430px;
+ margin: 90px 0;
+ border-radius: 10px;
+ padding: 20px;
+}
+
+article h1 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Rubik', sans-serif;
 }
 
 @media screen and (max-width: 450px){
