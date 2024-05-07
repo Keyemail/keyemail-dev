@@ -86,12 +86,13 @@ header h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
-  margin: 90px 0;
+  margin-top: 90px;
   width: 750px;
   color: white;
   font-family: 'Rubik', sans-serif;
