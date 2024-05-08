@@ -11,35 +11,33 @@
       <p>I specialize in IT and web development-related stuff, but I also love doing a variety of different hobbies such as Flight Simulator, or learning Japanese. I daily run an Arch Linux machine as my main system and support Linux in every way. I'm glad to meet you! </p>
     </div>
     <article>
-      <h1>Comments! Please leave one!</h1>
+      <h1>Comments!</h1>
       <div>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello! this is a very long text thats suppose to take the entire screen so we can see how it handles mutiple if not triple the amount of lines it suppose to use.</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>
-	<span>Me: Hello!</span>	
+	<span>Developer: Sorry this function is in the workings! Come back later to use this function.</span>	
       </div>
       <input type="text" placeholder="Start Typing.." required minlength="1"/>
     </article>
   </div>
+  <i class="fa-solid fa-arrow-down morearrow" @click="downArrow()" title="Nothing.."></i>
 </template>
+
+<script>
+export default {
+  methods: {
+    downArrow(){
+      if(counter >= 4){
+        var quack = new Audio(require('@/assets/sounds/duck-quack.mp3'));
+        quack.play();
+        counter = 0;
+      }
+      alert('Nothing to scroll down to, may come useful later though..');
+      counter++;
+    }
+  }
+}
+
+var counter = 0;
+</script>
 
 <style scoped>
 header {
@@ -93,7 +91,7 @@ header h1 {
   display: flex;
   flex-direction: column;
   margin-top: 90px;
-  width: 750px;
+  width: 700px;
   color: white;
   font-family: 'Rubik', sans-serif;
   background-color: #151d2f;
@@ -118,8 +116,8 @@ header h1 {
 article {
  background-color: #151d2f;
  height: 350px;
- width: 630px;
- margin: 90px 0;
+ width: 700px;
+ margin-top: 90px;
  border-radius: 10px;
  padding: 20px;
 }
@@ -140,7 +138,7 @@ article div {
   display: flex;
   flex-direction: column-reverse;
   overflow: auto;
-  max-height: 240px;
+  height: 240px;
   background-color: #111826;
   padding: 10px;
   border-radius: 10px;
@@ -160,6 +158,32 @@ article input {
   border-radius: 10px;
   width: 100%;
   box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+}
+
+.morearrow {
+  cursor: pointer;
+  font-size: 40px;
+  color: white;
+  margin: 40px auto;
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1519px){
+  .section-row > * {
+    width: 100%;
+  }
+  .intro h1 {
+    text-align: center;
+  }
+  .intro p {
+    text-align: center;
+    max-width: 100%;
+  }
+  article{
+   margin-top: 20px;
+  }
 }
 
 @media screen and (max-width: 450px){
